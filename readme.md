@@ -30,6 +30,10 @@ Criar arquivo de banco de dados
 ```
 touch database.json
 ```
+Criar um objeto vazio no arquivo database.json
+```
+{}
+```
 
 Iniciar configuração 
 ```
