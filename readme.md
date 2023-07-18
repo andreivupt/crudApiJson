@@ -55,8 +55,9 @@ app.listen(3000, ()=>{
     console.log(`listeniing at port: 3000`)
 }) 
 ```
+Criar script
 ```
-mkdir crudApiJson
+"start":"nodemon --exec ts-node src/server.ts"
 ```
 ```
 mkdir crudApiJson
