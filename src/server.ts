@@ -15,7 +15,7 @@ app.get('/api/users', (req: any, res: any) => {
     res.send(JSON.parse(jsonData));
 });
 
-//Cadastrar registro
+//Cadastrar usuario
 app.post('/api/users', (req: any, res: any) => {
     //atribui a base de dados em nova variavel
     const jsonDataBase = fs.readFileSync(data);
@@ -36,9 +36,10 @@ app.post('/api/users', (req: any, res: any) => {
     fs.writeFileSync(data, values);
     
     //retorno amigável para o usuário que chamou o endpoint
-    res.status(201).send("Usuario '" + req.body.username + "' cadastrado com sucesso!");
+    res.status(201).send("User '" + req.body.username + "' registered with successfulll!");
 });
 
+//Editar usuario
 app.put('/api/user/:id', (req: any, res: any) => {
     //atribui a base de dados em nova variavel
     const jsonDataBase = fs.readFileSync(data);
@@ -60,7 +61,7 @@ app.put('/api/user/:id', (req: any, res: any) => {
 
     //retorno amigável para o usuário que o endpoint
     res.send(`User with id ${userId} has been updated`)
-})
+});
 
 //Iniciar servidor
 app.listen(3000, () => console.log(`listeniing at port: 3000`));
