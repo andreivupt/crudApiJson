@@ -26,7 +26,6 @@ Criar arquivo server.ts dentro da pasta src
 ```
 touch src/server.ts
 ```
-```
 Criar arquivo de banco de dados
 ```
 touch database.json
